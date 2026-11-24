@@ -1,0 +1,39 @@
+:root {
+  --vert: #2f7d5b;
+  --vert-clair: #e8f3ed;
+  --texte: #1f2a24;
+  --gris: #5f6b65;
+  --fond: #fbfaf7;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  color: var(--texte);
+  background: var(--fond);
+  line-height: 1.6;
+}
+header {
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+header a.logo { font-weight: 700; font-size: 1.3rem; color: var(--vert); text-decoration: none; }
+nav a { color: var(--gris); text-decoration: none; margin-left: 1rem; font-size: .95rem; }
+nav a:hover { color: var(--vert); }
+main { max-width: 760px; margin: 0 auto; padding: 1rem 1.5rem 3rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 1.5rem 0 .5rem; }
+h2 { font-size: 1.25rem; margin-top: 2rem; color: var(--vert); }
+h3 { font-size: 1.05rem; margin: 1.4rem 0 .3rem; }
+p, li { color: var(--texte); }
+.sous-titre { color: var(--gris); font-size: 1.1rem; margin-top: 0; }
+.date { color: var(--gris); font-size: .9rem; }
+.cartes { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0; }
+.carte { background: #fff; border: 1px solid #e4e8e5; border-radius: 14px; padding: 1.2rem; }
+.carte h3 { margin-top: 0; }
+.encadre { background: var(--vert-clair); border-radius: 14px; padding: 1rem 1.2rem; margin: 1.5rem 0; }
+a { color: var(--vert); }
+footer { max-width: 760px; margin: 0 auto; padding: 1.5rem; color: var(--gris); font-size: .85rem; border-top: 1px solid #e4e8e5; }
